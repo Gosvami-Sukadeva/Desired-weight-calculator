@@ -11,6 +11,64 @@
     />
   </head>
   <body>
+    <header class="header">
+      <h1 class="header__heading">
+        Desired waight calculator
+      </h1>
+    </header>
+    <main class="content">
+      <section class="form">
+        <article class="form__item">
+          <label for="weight-initial" class="form__label"
+            >initial weight:</label
+          >
+          <div class="form__data">
+            <input
+              type="range"
+              name="weight-initial"
+              id="weight-initial"
+              class="form__input"
+              step="1"
+              min="30"
+              max="130"
+            />
+            <p class="form__result">85 kg</p>
+          </div>
+        </article>
+        <article class="form__item">
+          <label for="weight-desired" class="form__label"
+            >Desired waight:</label
+          >
+          <div class="form__data">
+            <input
+              type="range"
+              name="weight-desired"
+              id="weight-desired"
+              class="form__input"
+              step="1"
+              min="30"
+              max="130"
+            />
+            <p class="form__result">85 kg</p>
+          </div>
+        </article>
+        <article class="form__item">
+          <label for="height" class="form__label">Height:</label>
+          <div class="form__data">
+            <input
+              type="range"
+              name="height"
+              id="height"
+              class="form__input"
+              step="1"
+              min="120"
+              max="220"
+            />
+            <p class="form__result">170 cm</p>
+          </div>
+        </article>
+      </section>
+    </main>
     <script src="./js/index.js"></script>
   </body>
 </html>
