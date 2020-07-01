@@ -1,6 +1,10 @@
 class App {
   //parameters
-  min;
+  minWeight = 30;
+  maxWeight = 130;
+  minHeight = 120;
+  maxHeight = 220;
+
   //elements
   initialWeightInput = null;
   desiredWeightInput = null;
@@ -40,6 +44,26 @@ class App {
     this.button = document.querySelector(this.DOMElements.button);
   }
   setInitialValues() {
-    this.initialWeightInput;
+    this.setInputValues(
+      this.initialWeightInput,
+      this.minWeight,
+      this.maxWeight
+    );
+    this.setInputValues(
+      this.desiredlWeightInput,
+      this.minWeight,
+      this.maxWeight
+    );
+    this.setInputValues(this.heightInput, this.minHeight, this.maxHeight);
+  }
+
+  setInputValues(element, minValue, maxValue) {
+    element.min = minValue;
+    element.max = maxValue;
+    element.value = this.getAverage(minValue, maxValue);
+  }
+
+  getAverage(valueOne, valueTwo) {
+    return Math.round((valueOne + valueTwo) / 2);
   }
 }
