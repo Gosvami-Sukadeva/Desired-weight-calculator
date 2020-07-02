@@ -6,21 +6,21 @@
     <title>Desired weight calculator</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header class="header">
       <h1 class="header__heading">
-        Desired waight calculator
+        Desired Weight calculator
       </h1>
     </header>
     <main class="content">
-      <section class="form">
+      <section class="form" data-form>
         <article class="form__item">
           <label for="weight-initial" class="form__label"
-            >initial weight:</label
+            >Initial weight:</label
           >
           <div class="form__data">
             <input
@@ -30,12 +30,12 @@
               class="form__input"
               step="1"
             />
-            <p class="form__result">85 kg</p>
+            <p class="form__result" data-initial-weight-result>85 kg</p>
           </div>
         </article>
         <article class="form__item">
           <label for="weight-desired" class="form__label"
-            >Desired waight:</label
+            >Desired weight:</label
           >
           <div class="form__data">
             <input
@@ -45,7 +45,7 @@
               class="form__input"
               step="1"
             />
-            <p class="form__result">85 kg</p>
+            <p class="form__result" data-desired-weight-result>85 kg</p>
           </div>
         </article>
         <article class="form__item">
@@ -58,7 +58,7 @@
               class="form__input"
               step="1"
             />
-            <p class="form__result">170 cm</p>
+            <p class="form__result" data-height-result>170 cm</p>
           </div>
         </article>
         <article class="form__item">
@@ -83,22 +83,7 @@
             />
           </div>
         </article>
-        <button class="form__button">Count</button>
-      </section>
-      <section class="result">
-        <p class="result__paragraph">You want loose <strong>20kg</strong></p>
-        <p class="result__paragraph">
-          Your current BMI is <strong>28</strong>(overweight)
-        </p>
-        <p class="result__paragraph">
-          Your desired BMI is <strong>25</strong>(normal)
-        </p>
-        <p class="result__paragraph">
-          You should loose<strong>1 kg</strong>per day
-        </p>
-        <p class="result__paragraph">
-          You should loose <strong>7kg</strong>per week
-        </p>
+        <button class="form__button" data-button>Count</button>
       </section>
     </main>
     <script src="./js/index.js"></script>
